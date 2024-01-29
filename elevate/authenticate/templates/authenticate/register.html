@@ -1,0 +1,15 @@
+<h1>register</h1>
+
+<form method ="POST" action="">
+   {% csrf_token %}
+   <!-- {{ Form.as_p }} -->
+   {{Form.username.label}}
+   {{Form.username}}
+   {{Form.email.label}}
+   {{Form.email}}
+   {{Form.password1.label}}
+   {{Form.password1}}
+   {{Form.password2.label}}
+   {{Form.password2}}
+
+</form>
